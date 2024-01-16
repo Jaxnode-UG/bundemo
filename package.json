@@ -1,11 +1,17 @@
 {
-  "dependencies": { "hono": "^3.12.0" },
+  "dependencies": {
+    "@elysiajs/html": "^0.8.0",
+    "elysia": "^0.8.9",
+    "hono": "^3.12.0"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "scripts": {
     "start": "bun run index.ts",
-    "hono": "bun run --hot honoserver.ts"
+    "builder": "bun run builder.js",
+    "hono": "bun run --hot honoserver.ts",
+    "elysia": "bun run --hot elysiademo.tsx"
   },
   "name": "bundemo",
   "module": "index.ts",
