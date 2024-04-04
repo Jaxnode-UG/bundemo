@@ -1,7 +1,7 @@
 const result = await Bun.build({
-    entrypoints: ['./elysiademo.tsx'],
+    entrypoints: ['./index.ts', './server.ts', './honoserver.ts', './filereader.ts', './elysiademo.tsx'],
     outdir: './dist',
-    target: "node",
+    target: "bun",
     external: ['*']
 });
   
